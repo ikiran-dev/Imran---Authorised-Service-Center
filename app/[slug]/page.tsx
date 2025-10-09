@@ -42,14 +42,14 @@ export default function BrandPage({ params }: BrandPageProps) {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="h-8 flex items-center justify-center">
+              {/* <div className="h-8 flex items-center justify-center">
                 <img
                   src={brand.logoUrl || "/placeholder.svg"}
                   alt={`${brand.name} logo`}
                   className="max-w-full max-h-full object-contain"
                 />
-              </div>
-            {/* <span className="font-bold text-xl md:text-2xl">Bangalore Service Center</span> */}
+              </div> */}
+            <span className="font-bold text-xl md:text-2xl">Bangalore Service Center</span>
               {/* <span className="font-bold text-xl">{brand.name}</span> */}
             </Link>
           </div>
@@ -270,7 +270,7 @@ export default function BrandPage({ params }: BrandPageProps) {
         <div className="container px-4 md:px-6 py-6 md:py-8 pb-28">
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
             <p className="text-sm text-yellow-800">
-              <strong>Disclaimer:</strong> {brand.name} Service Center is an independent third-party service center. We are not affiliated
+              <strong>Disclaimer:</strong> Bangalore Service Center is an independent third-party service center. We are not affiliated
               with or authorized by any TV manufacturer. All repairs and services will be chargeable, even if your
               product is still under the manufacturer's warranty.
             </p>
@@ -278,7 +278,7 @@ export default function BrandPage({ params }: BrandPageProps) {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                © {new Date().getFullYear()} {brand.name} Service Center. All rights reserved.
+                © {new Date().getFullYear()} Bangalore Service Center. All rights reserved.
               </p>
             </div>
             <div className="hidden md:flex items-center gap-4">

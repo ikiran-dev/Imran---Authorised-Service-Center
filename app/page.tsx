@@ -124,8 +124,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                © {new Date().getFullYear()} Authorised Service Center. All rights reserved.
+                © {new Date().getFullYear()} Bangalore Service Center. All rights reserved.
               </p>
+              {/* <p className="text-sm text-gray-500 dark:text-gray-400">
+                © {new Date().getFullYear()} Authorised Service Center. All rights reserved.
+              </p> */}
             </div>
             <div className="flex items-center gap-4">
               <Button asChild variant="outline" size="sm">
