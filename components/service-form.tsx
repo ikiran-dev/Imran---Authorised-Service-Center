@@ -47,7 +47,7 @@ Model Number: ${model}
 Issue: ${issue}
     `.trim()
 
-    const whatsappUrl = `https://wa.me/917892894122?text=${encodeURIComponent(text)}`
+    const whatsappUrl = `https://wa.me/919845188786?text=${encodeURIComponent(text)}`
     window.open(whatsappUrl, '_blank')
 
     setTimeout(() => {

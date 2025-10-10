@@ -17,7 +17,7 @@ export default function ContactPage() {
             </Link>
           </div>
           <Button asChild>
-            <Link href="tel:+91-7892894122" className="gap-2">
+            <Link href="tel:080-62180344" className="gap-2">
               <PhoneCall className="h-4 w-4" />
               Call Now
             </Link>
@@ -42,7 +42,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold">Phone</h3>
                     <p className="text-gray-500 dark:text-gray-400">Call us for immediate assistance</p>
-                    <p className="font-medium mt-1">+91-7892894122</p>
+                    <p className="font-medium mt-1">080-62180344</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -116,9 +116,9 @@ export default function ContactPage() {
                 <Link href="/terms">Terms</Link>
               </Button>
               <Button asChild size="sm">
-                <Link href="tel:+91-7892894122" className="gap-2">
+                <Link href="tel:080-62180344" className="gap-2">
                   <PhoneCall className="h-4 w-4" />
-                  +91-7892894122
+                  080-62180344
                 </Link>
               </Button>
             </div>

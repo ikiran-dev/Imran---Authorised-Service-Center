@@ -14,7 +14,7 @@ export default function Home() {
             </Link>
           </div>
           <Button asChild>
-            <Link href="tel:+91-7892894122" className="gap-2">
+            <Link href="tel:080-62180344" className="gap-2">
               <PhoneCall className="h-4 w-4" />
               Call Now
             </Link>
@@ -144,9 +144,9 @@ export default function Home() {
                 <Link href="/terms">Terms</Link>
               </Button>
               <Button asChild size="sm">
-                <Link href="tel:+91-7892894122" className="gap-2">
+                <Link href="tel:080-62180344" className="gap-2">
                   <PhoneCall className="h-4 w-4" />
-                  +91-7892894122
+                  080-62180344
                 </Link>
               </Button>
             </div>

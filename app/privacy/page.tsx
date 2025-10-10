@@ -162,7 +162,7 @@ export default function PrivacyPage() {
                   </p>
                   <div className="bg-gray-50 p-4 rounded-lg">
                     <p>
-                      <strong>Phone:</strong> +91-7892894122
+                      <strong>Phone:</strong> 080-62180344
                     </p>
                     <p>
                       <strong>Address:</strong> No. 5, Bangalore Service Center, Jp Nagar 7th phase kanakpura main road Bangalore - 560078
@@ -209,9 +209,9 @@ export default function PrivacyPage() {
                 <Link href="/terms">Terms</Link>
               </Button>
               <Button asChild size="sm">
-                <Link href="tel:+91-7892894122" className="gap-2">
+                <Link href="tel:080-62180344" className="gap-2">
                   <PhoneCall className="h-4 w-4" />
-                  +91-7892894122
+                  080-62180344
                 </Link>
               </Button>
             </div>

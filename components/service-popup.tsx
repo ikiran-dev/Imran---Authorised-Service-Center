@@ -77,7 +77,7 @@ export default function ServicePopup({ brand }: ServicePopupProps) {
           {/* Call to Action */}
           <div className="space-y-3">
             <Button asChild size="lg" className="w-full bg-red-500 hover:bg-red-600 text-white font-bold">
-               <Link href="tel:+91-7892894122" className="font-bold"> 
+               <Link href="tel:080-62180344" className="font-bold"> 
                   <Image width={25} height={25} src="/call.gif" alt="call"/>
                   CALL NOW
                 </Link>

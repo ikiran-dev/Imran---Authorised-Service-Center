@@ -13,7 +13,7 @@ export default function AboutPage() {
             </Link>
           </div>
           <Button asChild>
-            <Link href="tel:+91-7892894122" className="gap-2">
+            <Link href="tel:080-62180344" className="gap-2">
               <PhoneCall className="h-4 w-4" />
               Call Now
             </Link>
@@ -139,7 +139,7 @@ export default function AboutPage() {
               </div>
               <div className="pt-4 text-center">
                 <Button asChild size="lg">
-                  <Link href="tel:+91-7892894122" className="gap-2">
+                  <Link href="tel:080-62180344" className="gap-2">
                     <PhoneCall className="h-5 w-5" />
                     Contact Us Today
                   </Link>
@@ -170,9 +170,9 @@ export default function AboutPage() {
                 <Link href="/terms">Terms</Link>
               </Button>
             <Button asChild size="sm">
-              <Link href="tel:+91-7892894122" className="gap-2">
+              <Link href="tel:080-62180344" className="gap-2">
                 <PhoneCall className="h-4 w-4" />
-                +91-7892894122
+                080-62180344
               </Link>
             </Button>
           </div>
