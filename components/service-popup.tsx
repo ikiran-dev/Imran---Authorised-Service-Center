@@ -18,7 +18,7 @@ export default function ServicePopup({ brand }: ServicePopupProps) {
     // Show popup after 7 seconds
     const timer = setTimeout(() => {
       setIsOpen(true)
-    }, 4000)
+    }, 3000)
 
     return () => clearTimeout(timer)
   }, [])
