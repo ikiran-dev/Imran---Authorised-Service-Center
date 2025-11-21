@@ -9,7 +9,7 @@ export default function TermsPage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold text-xl md:text-2xl">Bangalore Service Center</span>
+              <span className="font-bold text-xl md:text-2xl">Premium Service Center</span>
             </Link>
           </div>
           <Button asChild>
@@ -227,7 +227,7 @@ export default function TermsPage() {
                       <strong>Phone:</strong> 080-62180344
                     </p>
                     <p>
-                      <strong>Address:</strong> No. 5, Bangalore Service Center, Jp Nagar 7th phase kanakpura main road Bangalore - 560078
+                      <strong>Address:</strong> No. 5, Premium Service Center, Jp Nagar 7th phase kanakpura main road Bangalore - 560078
                     </p>
                   </div>
                 </div>
@@ -246,15 +246,15 @@ export default function TermsPage() {
         <div className="container px-4 md:px-6 py-6 md:py-8">
           <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-6">
             <p className="text-sm text-yellow-800">
-              <strong>Disclaimer:</strong> Bangalore Service Center is an independent third-party service center. We are not affiliated
-              with or authorized by any TV manufacturer. All repairs and services will be chargeable, even if your
+              <strong>Disclaimer:</strong> Premium Service Center is an independent third-party service center. We are not affiliated
+              with or authorized by any manufacturer. All repairs and services will be chargeable, even if your
               product is still under the manufacturer's warranty.
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                © {new Date().getFullYear()} Bangalore Service Center. All rights reserved.
+                © {new Date().getFullYear()} Premium Service Center. All rights reserved.
               </p>
             </div>
             <div className="flex items-center gap-4">

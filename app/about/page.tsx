@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
-              <span className="font-bold text-xl md:text-2xl">Bangalore Service Center</span>
+              <span className="font-bold text-xl md:text-2xl">Premium Service Center</span>
             </Link>
           </div>
           <Button asChild>
@@ -35,7 +35,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <h2 className="text-2xl font-bold">Our Mission</h2>
                 <p className="text-gray-500 dark:text-gray-400">
-                  At Bangalore Service Center, our mission is to provide reliable, professional, and timely repair
+                  At Premium Service Center, our mission is to provide reliable, professional, and timely repair
                   services for all major appliance brands. We understand the inconvenience caused by malfunctioning
                   appliances and strive to restore them to optimal working condition as quickly as possible.
                 </p>
@@ -46,7 +46,7 @@ export default function AboutPage() {
                   <li className="flex items-start gap-2">
                     <div className="flex h-2 w-2 translate-y-1.5 rounded-full bg-primary" />
                     <span>
-                      <strong>Authorized Service:</strong> We are officially authorized by major brands to provide
+                      <strong>Authorized Service:</strong> We are third party service center, not authorized by major brands to provide
                       repair and maintenance services.
                     </span>
                   </li>
@@ -153,7 +153,7 @@ export default function AboutPage() {
         <div className="container flex flex-col md:flex-row items-center justify-between gap-4 py-6 md:py-8">
           <div className="text-center md:text-left">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              © {new Date().getFullYear()} Bangalore Service Center. All rights reserved.
+              © {new Date().getFullYear()} Premium Service Center. All rights reserved.
             </p>
           </div>
           <div className="flex items-center gap-4">
