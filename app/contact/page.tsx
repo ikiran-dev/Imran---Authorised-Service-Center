@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { PhoneCall, Mail, MapPin, Clock } from "lucide-react"
 import ContactForm from "./form"
 import ServicePopup from "@/components/service-popup"
+import { gtag_report_conversion } from "@/lib/gtag"
 
 export default function ContactPage() {
   return (
@@ -18,7 +19,7 @@ export default function ContactPage() {
             </Link>
           </div>
           <Button asChild>
-            <Link href="tel:080-62180344" className="gap-2">
+            <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className="gap-2">
               <PhoneCall className="h-4 w-4" />
               Call Now
             </Link>
@@ -117,7 +118,7 @@ export default function ContactPage() {
                 <Link href="/terms">Terms</Link>
               </Button>
               <Button asChild size="sm">
-                <Link href="tel:080-62180344" className="gap-2">
+                <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className="gap-2">
                   <PhoneCall className="h-4 w-4" />
                   080-62180344
                 </Link>

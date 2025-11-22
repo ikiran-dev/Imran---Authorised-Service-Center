@@ -14,6 +14,7 @@ import {
 } from '@/components/ui/select'
 import { toast } from '@/components/ui/use-toast'
 import { Loader2 } from 'lucide-react'
+import { gtag_report_conversion } from '@/lib/gtag'
 
 interface ServiceFormProps {
   brand: string
@@ -26,6 +27,7 @@ export default function ServiceForm({ brand,slug }: ServiceFormProps) {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    gtag_report_conversion()
     setIsSubmitting(true)
 
     const form = e.target as HTMLFormElement

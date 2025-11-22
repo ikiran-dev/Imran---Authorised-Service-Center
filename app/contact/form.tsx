@@ -5,6 +5,7 @@ import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
+import { gtag_report_conversion } from '@/lib/gtag'
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -21,6 +22,7 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    gtag_report_conversion()
     const { name, email, phone, message } = form
     const text = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
     const whatsappUrl = `https://wa.me/919845188786?text=${encodeURIComponent(text)}`

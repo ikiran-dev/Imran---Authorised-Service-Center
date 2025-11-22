@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { PhoneCall } from "lucide-react"
 import ServicePopup from "@/components/service-popup"
+import { gtag_report_conversion } from "@/lib/gtag"
 
 export default function AboutPage() {
   return (
@@ -14,7 +15,7 @@ export default function AboutPage() {
             </Link>
           </div>
           <Button asChild>
-            <Link href="tel:080-62180344" className="gap-2">
+            <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className="gap-2">
               <PhoneCall className="h-4 w-4" />
               Call Now
             </Link>
@@ -140,7 +141,7 @@ export default function AboutPage() {
               </div>
               <div className="pt-4 text-center">
                 <Button asChild size="lg">
-                  <Link href="tel:080-62180344" className="gap-2">
+                  <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className="gap-2">
                     <PhoneCall className="h-5 w-5" />
                     Contact Us Today
                   </Link>
@@ -171,7 +172,7 @@ export default function AboutPage() {
                 <Link href="/terms">Terms</Link>
               </Button>
             <Button asChild size="sm">
-              <Link href="tel:080-62180344" className="gap-2">
+              <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className="gap-2">
                 <PhoneCall className="h-4 w-4" />
                 080-62180344
               </Link>
