@@ -699,164 +699,121 @@ export const brands = [
       },
     ],
   },
-  {
-  id: 10,
+ {
+  id: 21,
   name: "AO Smith",
   slug: "ao-smith-service-center",
   logoUrl: "/aosmith/logo.png",
-  tagline:"AO Smith Professional Fast Geyser Repair – 30-Minute Response & Same-Day Doorstep Service",
   heroImage: "/aosmith/hero.png",
+
   productImages: [
-    {
-      name: "Instant Geyser",
-      image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Instant+Geyser",
-    },
-    {
-      name: "Storage Geyser",
-      image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Storage+Geyser",
-    },
-    {
-      name: "Heat Pump Water Heater",
-      image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Heat+Pump",
-    },
-    {
-      name: "Solar Water Heater",
-      image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Solar+Heater",
-    },
+    { name: "Instant Geyser", image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Instant+Geyser" },
+    { name: "Storage Geyser", image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Storage+Geyser" },
+    { name: "Heat Pump Water Heater", image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Heat+Pump" },
+    { name: "RO Water Purifier", image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Water+Purifier" },
   ],
+
   workGallery: [
     {
       title: "Geyser Installation",
-      description: "Installed AO Smith instant geyser with proper safety setup.",
-      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+Installation",
+      description: "Installed AO Smith geyser with complete safety checks.",
+      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+Geyser+Install",
     },
     {
-      title: "Heating Element Replacement",
-      description: "Replaced faulty coil to restore proper heating.",
-      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+Heating+Fix",
+      title: "RO Purifier Service",
+      description: "Complete RO filter change & performance restoration.",
+      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+RO+Service",
     },
     {
-      title: "Thermostat Repair",
-      description: "Fixed thermostat & auto-cut issues for consistent heating.",
-      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+Thermostat+Repair",
+      title: "Heat Pump Repair",
+      description: "Fixed low-heating & compressor issues.",
+      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+Heat+Pump+Repair",
     },
   ],
+
   services: [
-    {
-      title: "Geyser Installation",
-      description: "Professional installation for instant & storage AO Smith geysers.",
-    },
-    {
-      title: "Heating Element Replacement",
-      description: "Fix low heating or no heating issues with genuine AO Smith spares.",
-    },
-    {
-      title: "Thermostat & Auto-cut Repair",
-      description: "Repair overheating issues and ensure proper auto-cut function.",
-    },
-    {
-      title: "General Geyser Service",
-      description: "Descaling, cleaning, leakage check & full safety inspection.",
-    },
+    // GEYSER SERVICES
+    { title: "Geyser Installation", description: "Installation for instant, storage & digital AO Smith geysers." },
+    { title: "Heating Element Replacement", description: "Fix low or no heating issues using original AO Smith coils." },
+    { title: "Thermostat & Auto-Cut Repair", description: "Fix overheating and auto-cut issues quickly." },
+    { title: "Geyser Leakage Repair", description: "Tank leakage, valve issues & pipe leakage repair." },
+    { title: "General Geyser Service", description: "Descaling, pressure check & complete cleaning." },
+
+    // WATER PURIFIER SERVICES
+    { title: "RO Water Purifier Service", description: "Complete cleaning, backwash & system performance check." },
+    { title: "RO Filter Replacement", description: "Original AO Smith RO filters & membrane replacement." },
+    { title: "Water Taste / Flow Issue Repair", description: "Fix slow water flow, bad taste & purification issues." },
+    { title: "RO Leakage Repair", description: "Fix internal leaks, pipe leaks & pump fitting issues." },
+
+    // HEAT PUMP SERVICES
+    { title: "Heat Pump Repair", description: "Fix low heating, compressor issues & gas-related problems." },
+    { title: "Heat Pump Installation", description: "Proper installation with load balancing & safety checks." },
+    { title: "Heat Pump Maintenance", description: "Coil cleaning, sediment removal & complete servicing." },
   ],
+
   commonIssues: [
-    {
-      title: "Water Not Heating",
-      description: "Fixing faulty thermostat, coil, or heating element.",
-    },
-    {
-      title: "Water Leakage",
-      description: "Internal tank leakage, pipe leakage & valve replacement.",
-    },
-    {
-      title: "Overheating",
-      description: "Auto-cut not working or thermostat malfunction.",
-    },
-    {
-      title: "Noise from Geyser",
-      description: "Sediment buildup causing noise and vibration.",
-    },
+    { title: "Geyser Not Heating", description: "Caused by faulty coil, thermostat or sediment buildup." },
+    { title: "Water Leakage", description: "Leakage from tank, inlet valve or heating chamber." },
+    { title: "RO Water Flow Slow", description: "Clogged RO filter, pump issue or membrane blockage." },
+    { title: "Water Taste Issue", description: "Filters expired or TDS imbalance in RO purifier." },
+    { title: "Heat Pump Low Heating", description: "Compressor, PCB or refrigerant-related problems." },
   ],
-},
+}
+,
 {
-  id: 11,
+  id: 22,
   name: "Racold",
   slug: "racold-service-center",
-  tagline:"Racold Professional Fast Geyser Repair – 30-Minute Response & Same-Day Doorstep Service",
   logoUrl: "/racold/logo.png",
   heroImage: "/racold/hero.png",
+
   productImages: [
-    {
-      name: "Instant Water Heater",
-      image: "/placeholder.svg?height=160&width=200&text=Racold+Instant+Heater",
-    },
-    {
-      name: "Vertical Storage Geyser",
-      image: "/placeholder.svg?height=160&width=200&text=Racold+Vertical+Geyser",
-    },
-    {
-      name: "Horizontal Storage Geyser",
-      image: "/placeholder.svg?height=160&width=200&text=Racold+Horizontal+Geyser",
-    },
-    {
-      name: "Solar Water Heater",
-      image: "/placeholder.svg?height=160&width=200&text=Racold+Solar+Heater",
-    },
+    { name: "Instant Geyser", image: "/placeholder.svg?height=160&width=200&text=Racold+Instant+Geyser" },
+    { name: "Vertical Storage Geyser", image: "/placeholder.svg?height=160&width=200&text=Racold+Vertical+Geyser" },
+    { name: "Horizontal Geyser", image: "/placeholder.svg?height=160&width=200&text=Racold+Horizontal+Geyser" },
+    { name: "Heat Pump", image: "/placeholder.svg?height=160&width=200&text=Racold+Heat+Pump" },
   ],
+
   workGallery: [
     {
-      title: "Heating Issue Fix",
-      description: "Replaced damaged heating element in Racold storage geyser.",
-      image: "/placeholder.svg?height=200&width=300&text=Racold+Heating+Fix",
+      title: "Heating Fix",
+      description: "Repaired Racold heating element for proper hot water flow.",
+      image: "/placeholder.svg?height=200&width=300&text=Racold+Heating+Repair",
     },
     {
       title: "Geyser Installation",
-      description: "Installed Racold instant heater with proper electrical safety.",
-      image: "/placeholder.svg?height=200&width=300&text=Racold+Installation",
+      description: "Installed instant & storage geysers with correct alignment.",
+      image: "/placeholder.svg?height=200&width=300&text=Racold+Install",
     },
     {
-      title: "Leakage Repair",
-      description: "Fixed internal tank leakage and safety valve issues.",
-      image: "/placeholder.svg?height=200&width=300&text=Racold+Leak+Repair",
+      title: "Heat Pump Service",
+      description: "Fixed compressor issues & improved performance.",
+      image: "/placeholder.svg?height=200&width=300&text=Racold+Heat+Pump",
     },
   ],
+
   services: [
-    {
-      title: "Geyser Installation",
-      description: "Expert installation service for all Racold water heater models.",
-    },
-    {
-      title: "Heating Element Replacement",
-      description: "Fix no-heating & low-heating issues with original parts.",
-    },
-    {
-      title: "Thermostat Repair",
-      description: "Repair auto-cut issues & overheating problems.",
-    },
-    {
-      title: "General Maintenance",
-      description: "Descaling, cleaning, and performance improvement.",
-    },
+    // GEYSER SERVICES
+    { title: "Geyser Installation", description: "Installation for instant, storage & solar compatible Racold units." },
+    { title: "Heating Element Replacement", description: "Replace faulty coils with original Racold elements." },
+    { title: "Thermostat Repair", description: "Fix overheating, auto-cut & temperature issues." },
+    { title: "Geyser Leakage Repair", description: "Tank leakage, valve & pipe leakage issues repaired." },
+    { title: "Full Geyser Service", description: "Descaling, sediment removal & safety check." },
+
+    // HEAT PUMP SERVICES
+    { title: "Heat Pump Repair", description: "Fix low heating, compressor faults & performance issues." },
+    { title: "Heat Pump Installation", description: "Proper installation with balancing & plumbing setup." },
+    { title: "Heat Pump Maintenance", description: "Cleaning, gas check & performance optimization." },
   ],
+
   commonIssues: [
-    {
-      title: "No Heating",
-      description: "Caused by faulty coil or thermostat in Racold geysers.",
-    },
-    {
-      title: "Overheating",
-      description: "Auto-cut or thermostat malfunction leading to overheating.",
-    },
-    {
-      title: "Water Leakage",
-      description: "Tank leakage or pipe leakage issues fixed at doorstep.",
-    },
-    {
-      title: "Low Water Pressure",
-      description: "Sediment buildup or blockage inside the unit.",
-    },
+    { title: "Geyser Not Heating", description: "Heating element or thermostat failure." },
+    { title: "Water Leakage", description: "Internal tank leakage or valve failure." },
+    { title: "Overheating", description: "Thermostat or auto-cut malfunction." },
+    { title: "Heat Pump Low Heating", description: "Compressor or refrigerant issues." },
   ],
-},
+}
+
 
 
 ]

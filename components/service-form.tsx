@@ -94,6 +94,8 @@ Issue: ${issue}
             <SelectItem value="Air Conditioner">Air Conditioner</SelectItem>
             <SelectItem value="Microwave Oven">Microwave Oven</SelectItem>
             <SelectItem value="Geyser">Geyser</SelectItem>
+            <SelectItem value="Water Purifier">Water Purifier</SelectItem>
+            <SelectItem value="Heat Pump">Heat Pump</SelectItem>
             <SelectItem value="Television">Television</SelectItem>
             <SelectItem value="Dishwasher">Dishwasher</SelectItem>
             <SelectItem value="Other">Other</SelectItem>
