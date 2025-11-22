@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { PhoneCall } from "lucide-react"
+import ServicePopup from "@/components/service-popup"
 
 export default function AboutPage() {
   return (
@@ -178,6 +179,7 @@ export default function AboutPage() {
           </div>
         </div>
       </footer>
+      <ServicePopup brand={""} />
     </div>
   )
 }

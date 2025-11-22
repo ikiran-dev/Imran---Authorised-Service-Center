@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { PhoneCall } from "lucide-react"
+import ServicePopup from "@/components/service-popup"
 
 export default function PrivacyPage() {
   return (
@@ -218,6 +219,7 @@ export default function PrivacyPage() {
           </div>
         </div>
       </footer>
+       <ServicePopup brand={""} />
     </div>
   )
 }

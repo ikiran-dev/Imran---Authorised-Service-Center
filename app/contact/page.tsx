@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { PhoneCall, Mail, MapPin, Clock } from "lucide-react"
 import ContactForm from "./form"
+import ServicePopup from "@/components/service-popup"
 
 export default function ContactPage() {
   return (
@@ -125,6 +126,7 @@ export default function ContactPage() {
           </div>
         </div>
       </footer>
+       <ServicePopup brand={""} />
     </div>
   )
 }
