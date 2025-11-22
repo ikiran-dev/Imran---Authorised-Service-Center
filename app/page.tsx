@@ -2,6 +2,7 @@ import Link from "next/link"
 import { brands } from "@/lib/brands"
 import { Button } from "@/components/ui/button"
 import { PhoneCall } from "lucide-react"
+import ServicePopup from "@/components/service-popup"
 
 export default function Home() {
   return (
@@ -153,6 +154,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      <ServicePopup brand={""} />
     </div>
   )
 }
