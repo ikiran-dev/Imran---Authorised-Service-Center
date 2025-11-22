@@ -3,7 +3,7 @@ import { brands } from "@/lib/brands"
 import { Button } from "@/components/ui/button"
 import { PhoneCall } from "lucide-react"
 import ServicePopup from "@/components/service-popup"
-import { gtag_report_conversion } from "@/lib/gtag"
+import TrackedLink from "@/components/track"
 
 export default function Home() {
   return (
@@ -16,10 +16,10 @@ export default function Home() {
             </Link>
           </div>
           <Button asChild>
-            <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className="gap-2">
+            <TrackedLink href="tel:080-62180344" className="gap-2">
               <PhoneCall className="h-4 w-4" />
               Call Now
-            </Link>
+            </TrackedLink>
           </Button>
         </div>
       </header>
@@ -146,10 +146,10 @@ export default function Home() {
                 <Link href="/terms">Terms</Link>
               </Button>
               <Button asChild size="sm">
-                <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className="gap-2">
+                <TrackedLink href="tel:080-62180344" className="gap-2">
                   <PhoneCall className="h-4 w-4" />
                   080-62180344
-                </Link>
+                </TrackedLink>
               </Button>
             </div>
           </div>

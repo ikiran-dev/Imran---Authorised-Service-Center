@@ -7,7 +7,7 @@ import ServiceForm from "@/components/service-form"
 import clsx from "clsx"
 import Image from "next/image"
 import ServicePopup from "@/components/service-popup"
-import { gtag_report_conversion } from "@/lib/gtag"
+import TrackedLink from "@/components/track"
 
 interface BrandPageProps {
   params: {
@@ -55,12 +55,12 @@ export default function BrandPage({ params }: BrandPageProps) {
             </Link>
           </div>
           <Button asChild className={clsx(slug === "sony-service-center" &&'bg-white text-black')}>
-            <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className={clsx("gap2",slug === "sony-service-center" &&"text-black")}>
+            <TrackedLink href="tel:080-62180344" className={clsx("gap2",slug === "sony-service-center" &&"text-black")}>
             {slug === 'sony-service-center' && <Phone fill="black"/>}
              {slug !== 'sony-service-center' && <Image width={25} height={25} src="/call.gif" alt="call"/>}
               
               Call Now
-            </Link>
+            </TrackedLink>
           </Button>
         </div>
       </header>
@@ -94,10 +94,10 @@ export default function BrandPage({ params }: BrandPageProps) {
             </p>
             <div className="flex flex-col items-center justify-center">
               <Button asChild size="lg" className="gap-2 text-lg">
-                <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }} >
+                <TrackedLink href="tel:080-62180344">
                   <Image width={25} height={25} src="/call.gif" alt="call"/>
                   CALL NOW
-                </Link>
+                </TrackedLink>
               </Button>
             </div>
           </div>
@@ -259,10 +259,10 @@ export default function BrandPage({ params }: BrandPageProps) {
             <p className="text-xl mb-8 opacity-90">Our expert technicians are ready to help you</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button asChild size="lg" variant="secondary" className="gap-2 text-lg">
-                <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }} >
+                <TrackedLink href="tel:080-62180344">
                   <PhoneCall className="h-5 w-5" />
                   Call: 080-62180344
-                </Link>
+                </TrackedLink>
               </Button>
               <span className="text-sm opacity-75">Available 24/7 for emergency repairs</span>
             </div>
@@ -299,10 +299,10 @@ export default function BrandPage({ params }: BrandPageProps) {
                 <Link href="/terms">Terms</Link>
               </Button>
               <Button asChild size="sm">
-                <Link href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }}  className="gap-2">
+                <TrackedLink href="tel:080-62180344" className="gap-2">
                   <PhoneCall className="h-4 w-4" />
                   080-62180344
-                </Link>
+                </TrackedLink>
               </Button>
             </div>
           </div>
@@ -311,14 +311,14 @@ export default function BrandPage({ params }: BrandPageProps) {
         <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
   <div className="relative md:hidden">
     <div className="absolute inset-0 sparkle-border rounded-t-lg"></div>
-    <a href="tel:080-62180344" onClick={(e) => {e.preventDefault(); gtag_report_conversion("tel:080-62180344"); }} 
+    <TrackedLink href="tel:080-62180344"  
        className="w-full bg-black text-white py-4 flex flex-col items-center justify-center text-[20px] font-bold shadow-lg relative z-10 call-button transition-all duration-300">
       <div className="flex items-center space-x-1 pb-1">
         <Image width={30} height={30} src="/call.gif" alt="call"/>
         <span >Call Now: 080-62180344</span>
       </div>
        <span className="text-[14px]">Doorstep Service With Free Estimate</span>
-    </a>
+    </TrackedLink>
   </div>
 </div>
 <ServicePopup brand={brand.name} />
