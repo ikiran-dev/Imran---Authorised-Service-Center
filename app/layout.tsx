@@ -21,14 +21,14 @@ export default function RootLayout({
     
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17608459033"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17095039353"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-17608459033');
+              gtag('config', 'AW-17095039353');
             `,
           }}
           
