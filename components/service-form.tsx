@@ -93,6 +93,7 @@ Issue: ${issue}
             <SelectItem value="Washing Machine">Washing Machine</SelectItem>
             <SelectItem value="Air Conditioner">Air Conditioner</SelectItem>
             <SelectItem value="Microwave Oven">Microwave Oven</SelectItem>
+            <SelectItem value="Geyser">Geyser</SelectItem>
             <SelectItem value="Television">Television</SelectItem>
             <SelectItem value="Dishwasher">Dishwasher</SelectItem>
             <SelectItem value="Other">Other</SelectItem>

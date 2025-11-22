@@ -77,7 +77,7 @@ export default function BrandPage({ params }: BrandPageProps) {
               <div className="text-center text-white">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">{brand.name} Service Center</h1>
                 <p className="text-lg md:text-xl max-w-2xl mx-auto px-4">
-                  Professional repair and maintenance services for all your {brand.name} appliances
+                  {brand.tagline ?? `Fast and professional repair services for all ${brand.name} appliances.`}
                 </p>
               </div>
             </div>
@@ -101,6 +101,66 @@ export default function BrandPage({ params }: BrandPageProps) {
             </div>
           </div>
         </section>
+
+
+                <section className="py-12">
+  <div className="container px-4 md:px-6">
+    <div className="grid gap-8 lg:grid-cols-2 items-start">
+      {/* Left: Service Form */}
+      <div>
+        <h2 className="text-2xl font-bold mb-6">Request {brand.name} Service</h2>
+        <ServiceForm brand={brand.name} />
+      </div>
+
+      {/* Right: Services */}
+      <div>
+        <h2 className="text-2xl font-bold mb-6">Our Services for {brand.name} Products</h2>
+        <div className="grid gap-4">
+          {brand.services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white p-4 rounded-lg border shadow-sm hover:shadow-md transition-shadow"
+            >
+              <div className="flex items-start gap-3">
+                <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                  {/* Your custom SVG icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 256 256"
+                    className="w-6 h-6"
+                  >
+                    <g
+                      fill="#228be6"
+                      fillRule="nonzero"
+                      stroke="none"
+                      strokeWidth="1"
+                      strokeLinecap="butt"
+                      strokeLinejoin="miter"
+                      strokeMiterlimit="10"
+                      fontFamily="none"
+                      fontWeight="none"
+                      fontSize="none"
+                      textAnchor="none"
+                      style={{ mixBlendMode: "normal" }}
+                    >
+                      <g transform="scale(8.53333,8.53333)">
+                        <path d="M19.58789,3.00977c-2.07244,-0.08194 -4.17141,0.6675 -5.75391,2.25c-1.97494,1.97494 -2.2324,4.33856 -1.33203,6.58203l-8.33008,8.33008c-1.562,1.562 -1.562,4.09425 0,5.65625c1.562,1.562 4.09425,1.562 5.65625,0l8.33008,-8.33008c2.24347,0.90037 4.60709,0.64291 6.58203,-1.33203c2.11,-2.11 2.73663,-5.13687 1.89063,-7.79688l-4.63086,4.63086l-4,-1l-1,-4l4.63086,-4.63086c-0.665,-0.2115 -1.35216,-0.33206 -2.04297,-0.35937zM7,21c1.105,0 2,0.895 2,2c0,1.105 -0.895,2 -2,2c-1.105,0 -2,-0.895 -2,-2c0,-1.105 0.895,-2 2,-2z" />
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="font-medium mb-1">{service.title}</h3>
+                  <p className="text-sm text-gray-600">{service.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* Product Gallery */}
         <section className="py-12 bg-gray-50">
@@ -163,64 +223,7 @@ export default function BrandPage({ params }: BrandPageProps) {
         </section>
 
 
-        <section className="py-12">
-  <div className="container px-4 md:px-6">
-    <div className="grid gap-8 lg:grid-cols-2 items-start">
-      {/* Left: Service Form */}
-      <div>
-        <h2 className="text-2xl font-bold mb-6">Request {brand.name} Service</h2>
-        <ServiceForm brand={brand.name} />
-      </div>
 
-      {/* Right: Services */}
-      <div>
-        <h2 className="text-2xl font-bold mb-6">Our Services for {brand.name} Products</h2>
-        <div className="grid gap-4">
-          {brand.services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white p-4 rounded-lg border shadow-sm hover:shadow-md transition-shadow"
-            >
-              <div className="flex items-start gap-3">
-                <div className="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
-                  {/* Your custom SVG icon */}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 256 256"
-                    className="w-6 h-6"
-                  >
-                    <g
-                      fill="#228be6"
-                      fillRule="nonzero"
-                      stroke="none"
-                      strokeWidth="1"
-                      strokeLinecap="butt"
-                      strokeLinejoin="miter"
-                      strokeMiterlimit="10"
-                      fontFamily="none"
-                      fontWeight="none"
-                      fontSize="none"
-                      textAnchor="none"
-                      style={{ mixBlendMode: "normal" }}
-                    >
-                      <g transform="scale(8.53333,8.53333)">
-                        <path d="M19.58789,3.00977c-2.07244,-0.08194 -4.17141,0.6675 -5.75391,2.25c-1.97494,1.97494 -2.2324,4.33856 -1.33203,6.58203l-8.33008,8.33008c-1.562,1.562 -1.562,4.09425 0,5.65625c1.562,1.562 4.09425,1.562 5.65625,0l8.33008,-8.33008c2.24347,0.90037 4.60709,0.64291 6.58203,-1.33203c2.11,-2.11 2.73663,-5.13687 1.89063,-7.79688l-4.63086,4.63086l-4,-1l-1,-4l4.63086,-4.63086c-0.665,-0.2115 -1.35216,-0.33206 -2.04297,-0.35937zM7,21c1.105,0 2,0.895 2,2c0,1.105 -0.895,2 -2,2c-1.105,0 -2,-0.895 -2,-2c0,-1.105 0.895,-2 2,-2z" />
-                      </g>
-                    </g>
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-medium mb-1">{service.title}</h3>
-                  <p className="text-sm text-gray-600">{service.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 

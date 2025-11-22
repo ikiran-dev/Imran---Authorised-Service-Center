@@ -699,4 +699,164 @@ export const brands = [
       },
     ],
   },
+  {
+  id: 10,
+  name: "AO Smith",
+  slug: "ao-smith-service-center",
+  logoUrl: "/aosmith/logo.png",
+  tagline:"AO Smith Professional Fast Geyser Repair – 30-Minute Response & Same-Day Doorstep Service",
+  heroImage: "/aosmith/hero.png",
+  productImages: [
+    {
+      name: "Instant Geyser",
+      image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Instant+Geyser",
+    },
+    {
+      name: "Storage Geyser",
+      image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Storage+Geyser",
+    },
+    {
+      name: "Heat Pump Water Heater",
+      image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Heat+Pump",
+    },
+    {
+      name: "Solar Water Heater",
+      image: "/placeholder.svg?height=160&width=200&text=AO+Smith+Solar+Heater",
+    },
+  ],
+  workGallery: [
+    {
+      title: "Geyser Installation",
+      description: "Installed AO Smith instant geyser with proper safety setup.",
+      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+Installation",
+    },
+    {
+      title: "Heating Element Replacement",
+      description: "Replaced faulty coil to restore proper heating.",
+      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+Heating+Fix",
+    },
+    {
+      title: "Thermostat Repair",
+      description: "Fixed thermostat & auto-cut issues for consistent heating.",
+      image: "/placeholder.svg?height=200&width=300&text=AO+Smith+Thermostat+Repair",
+    },
+  ],
+  services: [
+    {
+      title: "Geyser Installation",
+      description: "Professional installation for instant & storage AO Smith geysers.",
+    },
+    {
+      title: "Heating Element Replacement",
+      description: "Fix low heating or no heating issues with genuine AO Smith spares.",
+    },
+    {
+      title: "Thermostat & Auto-cut Repair",
+      description: "Repair overheating issues and ensure proper auto-cut function.",
+    },
+    {
+      title: "General Geyser Service",
+      description: "Descaling, cleaning, leakage check & full safety inspection.",
+    },
+  ],
+  commonIssues: [
+    {
+      title: "Water Not Heating",
+      description: "Fixing faulty thermostat, coil, or heating element.",
+    },
+    {
+      title: "Water Leakage",
+      description: "Internal tank leakage, pipe leakage & valve replacement.",
+    },
+    {
+      title: "Overheating",
+      description: "Auto-cut not working or thermostat malfunction.",
+    },
+    {
+      title: "Noise from Geyser",
+      description: "Sediment buildup causing noise and vibration.",
+    },
+  ],
+},
+{
+  id: 11,
+  name: "Racold",
+  slug: "racold-service-center",
+  tagline:"Racold Professional Fast Geyser Repair – 30-Minute Response & Same-Day Doorstep Service",
+  logoUrl: "/racold/logo.png",
+  heroImage: "/racold/hero.png",
+  productImages: [
+    {
+      name: "Instant Water Heater",
+      image: "/placeholder.svg?height=160&width=200&text=Racold+Instant+Heater",
+    },
+    {
+      name: "Vertical Storage Geyser",
+      image: "/placeholder.svg?height=160&width=200&text=Racold+Vertical+Geyser",
+    },
+    {
+      name: "Horizontal Storage Geyser",
+      image: "/placeholder.svg?height=160&width=200&text=Racold+Horizontal+Geyser",
+    },
+    {
+      name: "Solar Water Heater",
+      image: "/placeholder.svg?height=160&width=200&text=Racold+Solar+Heater",
+    },
+  ],
+  workGallery: [
+    {
+      title: "Heating Issue Fix",
+      description: "Replaced damaged heating element in Racold storage geyser.",
+      image: "/placeholder.svg?height=200&width=300&text=Racold+Heating+Fix",
+    },
+    {
+      title: "Geyser Installation",
+      description: "Installed Racold instant heater with proper electrical safety.",
+      image: "/placeholder.svg?height=200&width=300&text=Racold+Installation",
+    },
+    {
+      title: "Leakage Repair",
+      description: "Fixed internal tank leakage and safety valve issues.",
+      image: "/placeholder.svg?height=200&width=300&text=Racold+Leak+Repair",
+    },
+  ],
+  services: [
+    {
+      title: "Geyser Installation",
+      description: "Expert installation service for all Racold water heater models.",
+    },
+    {
+      title: "Heating Element Replacement",
+      description: "Fix no-heating & low-heating issues with original parts.",
+    },
+    {
+      title: "Thermostat Repair",
+      description: "Repair auto-cut issues & overheating problems.",
+    },
+    {
+      title: "General Maintenance",
+      description: "Descaling, cleaning, and performance improvement.",
+    },
+  ],
+  commonIssues: [
+    {
+      title: "No Heating",
+      description: "Caused by faulty coil or thermostat in Racold geysers.",
+    },
+    {
+      title: "Overheating",
+      description: "Auto-cut or thermostat malfunction leading to overheating.",
+    },
+    {
+      title: "Water Leakage",
+      description: "Tank leakage or pipe leakage issues fixed at doorstep.",
+    },
+    {
+      title: "Low Water Pressure",
+      description: "Sediment buildup or blockage inside the unit.",
+    },
+  ],
+},
+
+
 ]
