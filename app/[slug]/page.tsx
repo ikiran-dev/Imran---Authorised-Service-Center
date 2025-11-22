@@ -77,7 +77,7 @@ export default function BrandPage({ params }: BrandPageProps) {
               <div className="text-center text-white">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">{brand.name} Service Center</h1>
                 <p className="text-lg md:text-xl max-w-2xl mx-auto px-4">
-                  {brand.tagline ?? `Fast and professional repair services for all ${brand.name} appliances.`}
+                  {`Fast and professional repair services for all ${brand.name} appliances.`}
                 </p>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function BrandPage({ params }: BrandPageProps) {
       {/* Left: Service Form */}
       <div>
         <h2 className="text-2xl font-bold mb-6">Request {brand.name} Service</h2>
-        <ServiceForm brand={brand.name} />
+        <ServiceForm brand={brand.name} slug={brand.name} />
       </div>
 
       {/* Right: Services */}

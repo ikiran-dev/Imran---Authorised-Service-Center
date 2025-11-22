@@ -17,9 +17,10 @@ import { Loader2 } from 'lucide-react'
 
 interface ServiceFormProps {
   brand: string
+  slug?:string
 }
 
-export default function ServiceForm({ brand }: ServiceFormProps) {
+export default function ServiceForm({ brand,slug }: ServiceFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [productType, setProductType] = useState('')
 
@@ -89,16 +90,18 @@ Issue: ${issue}
             <SelectValue placeholder="Select product type" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="Refrigerator">Refrigerator</SelectItem>
+            {slug === 'AO Smith' && <> <SelectItem value="Geyser">Geyser</SelectItem>
+            <SelectItem value="Water Purifier">Water Purifier</SelectItem>
+            <SelectItem value="Heat Pump">Heat Pump</SelectItem></>}
+            {slug === 'Racold' && <SelectItem value="Geyser">Geyser</SelectItem>}
+            {slug !=='Racold' && slug!=='AO Smith' && <><SelectItem value="Refrigerator">Refrigerator</SelectItem>
             <SelectItem value="Washing Machine">Washing Machine</SelectItem>
             <SelectItem value="Air Conditioner">Air Conditioner</SelectItem>
-            <SelectItem value="Microwave Oven">Microwave Oven</SelectItem>
-            <SelectItem value="Geyser">Geyser</SelectItem>
-            <SelectItem value="Water Purifier">Water Purifier</SelectItem>
-            <SelectItem value="Heat Pump">Heat Pump</SelectItem>
+            <SelectItem value="Microwave Oven">Microwave Oven</SelectItem>   
             <SelectItem value="Television">Television</SelectItem>
             <SelectItem value="Dishwasher">Dishwasher</SelectItem>
-            <SelectItem value="Other">Other</SelectItem>
+            <SelectItem value="Other">Other</SelectItem></>}
+            
           </SelectContent>
         </Select>
       </div>
