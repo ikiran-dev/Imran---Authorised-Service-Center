@@ -23,7 +23,7 @@ export default function ContactForm() {
     e.preventDefault()
     const { name, email, phone, message } = form
     const text = `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`
-    const whatsappUrl = `https://wa.me/917892894122?text=${encodeURIComponent(text)}`
+    const whatsappUrl = `https://wa.me/919845188786?text=${encodeURIComponent(text)}`
     window.open(whatsappUrl, '_blank')
     setForm({
         name: '',
