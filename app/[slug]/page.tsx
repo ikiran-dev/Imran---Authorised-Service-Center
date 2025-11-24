@@ -74,7 +74,7 @@ export default function BrandPage({ params }: BrandPageProps) {
               priority
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/70 flex items-center justify-center">
               <div className="text-center text-white">
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">{brand.name} Service Center</h1>
                 <p className="text-lg md:text-xl max-w-2xl mx-auto px-4">
