@@ -34,13 +34,9 @@ export default function BrandPage({ params }: BrandPageProps) {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <header className={clsx(
-    "sticky top-0 z-50 w-full backdrop-blur",
-    slug === "sony-service-center"
-      ? "bg-black border-none"
-      : "border-b bg-background/95 supports-[backdrop-filter]:bg-background/60"
-  )}>
-        <div className="container flex h-16 items-center justify-between">
+      <header className=
+    "sticky top-0 z-50 w-full backdrop-blur bg-black">
+        <div className="container flex h-16 items-center md:justify-between justify-center">
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center space-x-2">
               <div className="h-8 flex items-center justify-center">
@@ -50,14 +46,18 @@ export default function BrandPage({ params }: BrandPageProps) {
                   className="max-w-full max-h-full object-contain"
                 /> */}
               </div>
-            <span className="font-bold text-xl md:text-2xl">Premium Service</span>
-              {/* <span className="font-bold text-xl">{brand.name}</span> */}
+            {/* <span className="font-bold text-xl md:text-2xl">Premium Service</span> */}
+             <span
+  className="font-bold text-2xl text-center text-white">
+  {brand.name} Customer helpline
+</span>
+
             </Link>
           </div>
-          <Button asChild className={clsx(slug === "sony-service-center" &&'bg-white text-black')}>
-            <TrackedLink href="tel:080-62180344" className={clsx("gap2",slug === "sony-service-center" &&"text-black")}>
-            {slug === 'sony-service-center' && <Phone fill="black"/>}
-             {slug !== 'sony-service-center' && <Image width={25} height={25} src="/call.gif" alt="call"/>}
+          <Button asChild className='bg-white text-black hidden md:flex hover:bg-white'>
+            <TrackedLink href="tel:080-62180344" className={clsx("gap-2 text-black")}>
+       <Phone fill="black"/>
+           
               
               Call Now
             </TrackedLink>
